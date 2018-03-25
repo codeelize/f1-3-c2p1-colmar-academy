@@ -1,0 +1,527 @@
+body{
+  margin: 0;
+  font-size: 14px;
+  font-family: "Merriweather";
+  background-color: #FFEEE1;
+}
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Sans'), local('MerriweatherSans-Regular'), url(https://fonts.gstatic.com/s/merriweathersans/v9/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX1QjXp8Bte.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Merriweather Sans Light'), local('MerriweatherSans-Light'), url(https://fonts.gstatic.com/s/merriweathersans/v9/2-c49IRs1JiJN1FRAMjTN5zd9vgsFH1eYCDE0hZ0z5qZ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  @font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5-fCZMdeX3rg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Merriweather Black'), local('Merriweather-Black'), url(https://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52_wFZWMf6hPvhPQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+.container{
+  display: flex;
+}
+
+/* Header */
+
+.business-name{
+  align-items: center;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.business-title{
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.business-title img{
+  height: 50px;
+}
+
+.colmar{
+  color: #5D9696;
+  font-size: 1.5rem;
+  font-family: "Merriweather Sans";
+  font-weight: 900;
+}
+
+.academy{
+  color: #5D9696;
+  font-size: 1.4rem;
+  font-family: "Merriweather Sans";
+  font-weight: 300;
+}
+
+.menu span{
+  margin: 16px;
+  color: #012B35;
+  font-family: "Merriweather";
+}
+
+.menu span:hover{
+  font-weight: 900;
+}
+
+.menu{
+  display: inline-flex;
+}
+
+.business-name-mobile{
+  display: none;
+}
+
+/* Mobile header*/
+@media only screen and (max-width: 1024px ){
+.business-name-mobile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 64px;
+  background-color: #D29461;
+}
+.business-name{
+  display: none;
+}
+}
+
+/* Banner */
+
+.banner{
+  background-color: #93C0C0;
+  font-family: "Merriweather";
+}
+
+#title{
+  font-family: 'Merriweather';
+}
+
+.banner img{
+  margin: 32px 40px 32px 24px;
+  max-width: 60%;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  color: #012B35;
+  font-family: "Merriweather";
+}
+
+
+.button{
+  background-color: #012B35;
+  color: #FFEEE1;
+  width: 60%;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.button:hover{
+  background-color: #D29461;
+  color: #012B35;
+  font-weight: bold;
+}
+
+h1{
+  color: #012B35;
+  opacity: 1;
+}
+
+.banner-mobile{
+  display: none;
+}
+
+/* Banner mobile */
+@media only screen and (max-width: 768px){
+
+.banner{
+  display: none;
+}
+
+.banner-mobile{
+  display: flex;
+  flex-direction: column;
+  background-color: #90BDBD;
+}
+
+.banner-mobile img{
+  width: 100%;
+  height: auto;
+}
+
+.text-mob{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+.text-mob h3{
+  margin-top: .5rem;
+}
+
+.button-mob{
+  background-color: #012B35;
+  color: #FFEEE1;
+  font-weight: bold;
+  width: 70%;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+.button-mob:hover{
+  background-color: #D29461;
+  color: #012B35;
+  font-weight: bold;
+}
+}
+
+/* Info section */
+
+.university-info{
+  display: flex;
+  /*border: 2px solid red;*/
+  flex-direction: row;
+  font-family: "Merriweather";
+}
+
+.main-info{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  /*border: 1px solid blue;*/
+  margin: 32px 24px;
+}
+
+.main-info img{
+  width: 100%;
+  flex-grow: 3;
+}
+
+.main-info h2,
+.main-info p{
+  color: #012B35;
+}
+
+.main-info h2{
+  font-size: 1.5rem;
+}
+.sub-info{
+  margin: 32px 0;
+  width: 40%;
+  flex-grow: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.info{
+  display: flex;
+}
+
+.info:nth-child(2n+0){
+  background-color: #D29461;
+}
+
+.info-img{
+  margin: 16px;
+}
+
+.info-img img{
+  width: 10rem;
+}
+
+.text-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:
+}
+
+.text-info h3{
+  margin-bottom: 8px;
+  color: #012B35;
+  font-size: 1.15rem;
+}
+
+.text-info span{
+  margin-bottom: 8px;
+  color: #012B35;
+}
+
+#read-more{
+  color: #5D9696;
+}
+
+#read-more:hover{
+  color: #1F6565;
+  font-weight: bold;
+}
+
+.sub-info-mob{
+  display: none;
+}
+
+/* info section mobile */
+
+@media only screen and (max-width: 480px){
+  .main-info{
+    display: none;
+  }
+  .sub-info{
+    display: none;
+  }
+
+  .sub-info-mob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 16px 0 16px;
+  }
+  #read-more-mob{
+    color: #5D9696;
+    display: block;
+    margin: 16px 0;
+  }
+  #read-more-mob:hover{
+    color: #1F6565;
+    font-weight: bold;
+  }
+
+  .info-img-mob img{
+    width: 100%;
+  }
+  .text-info-mob{
+    text-align: center;
+  }
+  .text-info-mob h3{
+    margin-bottom: 8px;
+    color: #012B35;
+    font-size: 1.15rem;
+  }
+
+}
+
+/* Courses */
+
+.programs{
+  background-color: #90BDBD;
+}
+.program-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.program{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 32px;
+  margin-bottom: 20px;
+  background-color: #FFEEE1;
+}
+
+.program-img img{
+  width: 100%;
+}
+
+.program span{
+  display: block;
+}
+
+.program-text{
+  margin: 16px;
+  color: #012B35;
+}
+
+.program:hover{
+  background-color: #D29461;
+  color: #012B35;
+}
+
+.programs-mob{
+  display: none;
+}
+
+#start{
+  text-align: center;
+  padding: 32px;
+  margin: 0px;
+  font-family: "Merriweather";
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+/* Courses mobile */
+
+@media only screen and (max-width: 480px){
+.programs{
+  display: none;
+}
+.programs-mob{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #90BDBD;
+  font-size: 0.7rem;
+  padding-bottom: 1.5rem;
+}
+.program-text-mob:hover{
+  background-color: #D29461;
+  color: #012B35;
+}
+
+.program-text-mob{
+  margin-bottom: 8px;
+  background-color: #FFEEE1;
+}
+}
+
+/*Thesis exhibit*/
+
+.thesis-exhibit h1{
+  text-align: center;
+  color: #012B35;
+  font-size: 2rem;
+  font-family: "Merriweather";
+}
+
+.thesis-info{
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.thesis-main-info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 16px;
+  width: 70%;
+}
+
+.thesis-video video{
+  width: 100%;
+}
+
+.thesis-video{
+  margin-bottom: 24px;
+}
+.thesis-video-text{
+  color: #012B35;
+}
+
+.thesis-video-text h2{
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.thesis-sub{
+  display: flex;
+}
+
+.thesis-sub:nth-child(2n+0){
+  background-color: #D29461;
+}
+
+.thesis-sub-img{
+  margin: 16px;
+}
+.thesis-sub-img img{
+  width: 10rem;
+}
+
+.thesis-sub-txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: #012B35;
+  margin: 2rem;
+}
+
+.thesis-sub-txt h3{
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.thesis-exhibit-mob{
+  display: none;
+}
+
+@media only screen and (max-width: 480px){
+  .thesis-exhibit{
+    display: none;
+  }
+  .thesis-exhibit-mob{
+    display: flex;
+    flex-direction: column;
+    background-color: #D29461;
+  }
+
+  .thesis-exhibit-mob h1{
+    text-align: center;
+  }
+
+  .thesis-video-mob video{
+    width: 100%;
+  }
+
+}
+/*Footer*/
+
+footer{
+  background-color: #FFDEC2;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+
+.footer-left{
+  margin-left: 1.5rem;
+  color: #012B35;
+}
+
+.footer-right{
+  text-align: right;
+  margin-right: 2rem;
+  color: #012B35;
+}
+
+.footer-right span{
+  margin-left: .5rem;
+}
